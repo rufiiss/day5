@@ -14,4 +14,5 @@ if (score >= 90 && score <= 100) {
 } else {
     grade = 'Invalid score';
 }
+
 console.log(grade);
