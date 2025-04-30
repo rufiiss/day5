@@ -9,10 +9,9 @@ if (score >= 90 && score <= 100) {
     grade = 'C';
 } else if (score >= 50 && score <= 69) {
     grade = 'D';
-} else if (score >= 0 && score <= 49) {
+} else if (score >= 0 && score <= 45) {
     grade = 'F';
 } else {
     grade = 'Invalid score';
 }
-
 console.log(grade);
