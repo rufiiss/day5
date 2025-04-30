@@ -1,4 +1,4 @@
-const score = 45; // Измените значение на 45 для тестирования
+const score = 70;
 let grade;
 
 if (score >= 90 && score <= 100) {
@@ -12,7 +12,6 @@ if (score >= 90 && score <= 100) {
 } else if (score >= 0 && score <= 49) {
     grade = 'F';
 } else {
-    grade = 'Invalid score'; // На случай некорректного значения
+    grade = 'Invalid score';
 }
-
 console.log(grade);
