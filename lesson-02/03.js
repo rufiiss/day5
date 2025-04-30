@@ -1,4 +1,4 @@
-const score = 70;
+const score = 70;  
 let grade;
 
 if (score >= 90 && score <= 100) {
@@ -13,6 +13,5 @@ if (score >= 90 && score <= 100) {
     grade = 'F';
 } else {
     grade = 'Invalid score';
-}
 
-console.log(grade); 
+console.log(grade);
