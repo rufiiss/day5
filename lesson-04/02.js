@@ -1,18 +1,15 @@
-/*
-Напишите функцию `findUniqueElements`, которая принимает массив и возвращает новый массив, содержащий только уникальные элементы из исходного массива.
+function findUniqueElements(array) {
+    let uniqueArray = []; // Массив для уникальных элементов
 
-**Входные данные:**
+    for (let i = 0; i < array.length; i++) {
+      if (!includesElement(uniqueArray, array[i])) { // Используем ранее написанную функцию includesElement
+        uniqueArray.push(array[i]);
+      }
+    }
 
-- **`array`**: Массив, который может содержать повторяющиеся элементы.
+    return uniqueArray;
+  }
 
-**Выходные данные:**
-
-- Массив, содержащий только уникальные элементы из исходного массива.
-
-**Пример использования:**
-`findUniqueElements([1, 2, 3, 2, 1, 4])` вернёт `[1, 2, 3, 4]`.
-
-Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
-*/
-
-function findUniqueElements() {}
+  // Пример использования:
+  console.log(findUniqueElements([1, 2, 3, 2, 1, 4])); // [1, 2, 3, 4]
+  console.log(findUniqueElements(["apple", "banana", "apple", "cherry"])); // ["apple", "banana", "cherry"]
