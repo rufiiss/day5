@@ -1,5 +1,5 @@
 const score = parseInt(prompt("Введите ваш балл: "), 10);
-let grade; // объявляем переменную один раз
+let grade;
 
 if (score >= 90 && score <= 100) {
     grade = 'A';
@@ -15,4 +15,6 @@ if (score >= 90 && score <= 100) {
     grade = 'Invalid score';
 }
 
+// Добавляем явное возвращение значения
 console.log("Ваша оценка: " + grade);
+return grade;
