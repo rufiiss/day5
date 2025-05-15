@@ -15,9 +15,10 @@ function getGrade(score) {
         grade = 'Invalid score';
     }
 
-    return grade; // Теперь `return` внутри функции
+    return grade;
 }
 
+// Получаем значение для тестов Cypress
 const score = parseInt(prompt("Введите ваш балл: "), 10);
 const grade = getGrade(score);
 console.log("Ваша оценка: " + grade);
