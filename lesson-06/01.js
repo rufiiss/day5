@@ -1,4 +1,5 @@
-let currentIndex = 0; // Индекс текущего изображения
+document.addEventListener("DOMContentLoaded", () => {
+  let currentIndex = 0; // Индекс текущего изображения
 
 // Получаем элементы
 const imgElement = document.querySelector("#slider-image");
@@ -24,3 +25,5 @@ prevButton.addEventListener("click", () => {
 
 // Устанавливаем начальное изображение
 updateImage();
+
+});
