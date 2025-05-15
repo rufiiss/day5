@@ -1,15 +1,16 @@
 function findUniqueElements(array) {
-    let uniqueArray = []; // Массив для уникальных элементов
+    let uniqueArray = []; // Создаём массив для хранения уникальных значений
 
     for (let i = 0; i < array.length; i++) {
-      if (!includesElement(uniqueArray, array[i])) { // Используем ранее написанную функцию includesElement
+      if (!includesElement(uniqueArray, array[i])) { // Используем includesElement
         uniqueArray.push(array[i]);
       }
     }
 
-    return uniqueArray;
+    return uniqueArray; // Обязательно возвращаем результат!
   }
 
-  // Пример использования:
-  console.log(findUniqueElements([1, 2, 3, 2, 1, 4])); // [1, 2, 3, 4]
-  console.log(findUniqueElements(["apple", "banana", "apple", "cherry"])); // ["apple", "banana", "cherry"]
+  // Примеры:
+  console.log(findUniqueElements([1, 2, 2, 3, 4, 4, 5])); // [1, 2, 3, 4, 5]
+  console.log(findUniqueElements(["apple", "banana", "apple", "orange", "banana"])); // ["apple", "banana", "orange"]
+  console.log(findUniqueElements([true, false, true, false])); // [true, false]
