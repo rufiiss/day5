@@ -1,7 +1,6 @@
-const score = 55; // тестовое значение, можно изменять
+const score = parseInt(prompt("Введите ваш балл: "), 10);
 let grade;
 
-// Определение оценки в зависимости от балла
 if (score >= 90 && score <= 100) {
     grade = 'A';
 } else if (score >= 80 && score <= 89) {
@@ -13,12 +12,7 @@ if (score >= 90 && score <= 100) {
 } else if (score >= 0 && score <= 49) {
     grade = 'F';
 } else {
-    grade = 'Invalid score'; // Если балл вне диапазона
+    grade = 'Invalid score';
 }
 
-console.log(grade); // Выводим результат
-const studentCodeWithoutDeclarations = (0, removeOriginalDeclarations_1.removeOriginalDeclarations)(this.studentCode, ['score']);
-const testCode = `let score = ${score}; ${studentCodeWithoutDeclarations}; return grade;`;
-const executeScript = new Function(testCode);
-const grade = executeScript();
-(0, local_cypress_1.expect)(grade).to.equal(expectedGrade);
+console.log("Ваша оценка: " + grade);
